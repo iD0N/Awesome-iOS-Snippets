@@ -1,0 +1,116 @@
+//
+//  The MIT License (MIT)
+//
+//  Copyright (c) 2014 Andrew Clissold
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//      The above copyright notice and this permission notice shall be included in all
+//      copies or substantial portions of the Software.
+//
+//      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//      SOFTWARE.
+//
+
+import UIKit
+
+@IBDesignable
+class CardView: UIView {
+	
+	@IBInspectable var cornerRadius: CGFloat = 12.0
+	
+	@IBInspectable var shadowOffsetWidth: Int = 0
+	@IBInspectable var shadowOffsetHeight: Int = 4
+	@IBInspectable var shadowColor: UIColor? = UIColor.black
+	@IBInspectable var shadowOpacity: Float = 0.2
+	@IBInspectable var shadowRadius: CGFloat = 12.0
+	@IBInspectable var isRound: Bool = false
+	override func layoutSubviews() {
+		if isRound
+		{
+			cornerRadius = frame.width/2.0
+		}
+		layer.cornerRadius = cornerRadius
+		let shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius)
+		
+		layer.masksToBounds = false
+		layer.shadowColor = shadowColor?.cgColor
+		layer.shadowOffset = CGSize(width: shadowOffsetWidth, height: shadowOffsetHeight);
+		layer.shadowOpacity = shadowOpacity
+		layer.shadowPath = shadowPath.cgPath
+		layer.shadowRadius = shadowRadius
+	}
+	
+}
+
+@IBDesignable
+class TextFieldCardView: UITextField {
+	
+	@IBInspectable var iconImage: UIImage = UIImage()
+	@IBInspectable var cornerRadius: CGFloat = 16.0
+	
+	@IBInspectable var shadowOffsetWidth: Int = 0
+	@IBInspectable var shadowOffsetHeight: Int = 3
+	@IBInspectable var shadowColor: UIColor? = UIColor.black
+	@IBInspectable var shadowOpacity: Float = 0.2
+	@IBInspectable var shadowRadius: CGFloat = 5.0
+	
+	var paddingSize: CGFloat = 20.0
+	override func layoutSubviews() {
+		
+		super.layoutSubviews()
+		
+		layer.cornerRadius = cornerRadius
+		let shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius)
+		
+		layer.masksToBounds = false
+		layer.shadowColor = shadowColor?.cgColor
+		layer.shadowOffset = CGSize(width: shadowOffsetWidth, height: shadowOffsetHeight);
+		layer.shadowOpacity = shadowOpacity
+		layer.shadowPath = shadowPath.cgPath
+		layer.shadowRadius = shadowRadius
+	}
+	func addPaddings() {
+		
+		if(iconImage != UIImage())
+		{
+			let searchIcon = UIButton(frame: CGRect(x: 10, y: 0, width: 30.0 + paddingSize*2, height: 30))
+			searchIcon.contentEdgeInsets = UIEdgeInsets(top: 0.0, left: 10.0, bottom: 0.0, right: 10.0)
+			searchIcon.contentMode = .scaleAspectFit
+			searchIcon.setImage(iconImage, for: .normal)
+			if textAlignment != .right
+			{
+				self.leftView = searchIcon
+				self.leftViewMode = .always
+				self.rightView = UIView(frame: CGRect(x: 0, y: 0, width: paddingSize, height: paddingSize))
+				self.rightViewMode = .always
+			}
+			else
+			{
+				self.rightView = searchIcon
+				self.leftViewMode = .always
+				self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: paddingSize, height: paddingSize))
+				self.rightViewMode = .always
+			}
+		}
+		else
+		{
+			self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: paddingSize, height: paddingSize))
+			self.leftViewMode = .always
+			self.rightView = UIView(frame: CGRect(x: 0, y: 0, width: paddingSize, height: paddingSize))
+			self.rightViewMode = .always
+		}
+
+	}
+	
+}

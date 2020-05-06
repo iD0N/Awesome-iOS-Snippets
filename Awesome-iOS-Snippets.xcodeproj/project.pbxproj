@@ -7,8 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60E7346241F6FB1004B612D /* PriceFormatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E7342241F6FB1004B612D /* PriceFormatExtensions.swift */; };
+		F60E7348241F6FB1004B612D /* Textview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E7344241F6FB1004B612D /* Textview.swift */; };
+		F60E7349241F6FB1004B612D /* TextFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E7345241F6FB1004B612D /* TextFormatters.swift */; };
+		F60E734B241F6FD2004B612D /* Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E734A241F6FD2004B612D /* Textfield.swift */; };
+		F6629711243B3E6100864891 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6629710243B3E6100864891 /* Email.swift */; };
+		F666AC722381C450000F465F /* SnappingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC6A2381C450000F465F /* SnappingLayout.swift */; };
+		F666AC742381C450000F465F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC6C2381C450000F465F /* CardView.swift */; };
+		F666AC752381C450000F465F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC6D2381C450000F465F /* DataManager.swift */; };
+		F666AC762381C450000F465F /* CardMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC6E2381C450000F465F /* CardMessages.swift */; };
+		F666AC772381C450000F465F /* KingfisherSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC6F2381C450000F465F /* KingfisherSource.swift */; };
+		F666AC792381C450000F465F /* ShinyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC712381C450000F465F /* ShinyButton.swift */; };
+		F666AC7D2381D768000F465F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC7C2381D768000F465F /* UIView.swift */; };
+		F666AC7F2381D782000F465F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC7E2381D782000F465F /* String.swift */; };
+		F666AC812381D79F000F465F /* PriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC802381D79F000F465F /* PriceFormatter.swift */; };
+		F666AC832381D813000F465F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC822381D813000F465F /* Color.swift */; };
+		F666AC852381D838000F465F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC842381D838000F465F /* Date.swift */; };
+		F666AC872381DE6D000F465F /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC862381DE6D000F465F /* ApiManager.swift */; };
+		F666AC892381E28E000F465F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC882381E28D000F465F /* Button.swift */; };
+		F666AC8B2381E2B2000F465F /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC8A2381E2B2000F465F /* Font.swift */; };
+		F666AC8D2381E58E000F465F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC8C2381E58E000F465F /* Image.swift */; };
+		F666AC8F2381E5B0000F465F /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC8E2381E5B0000F465F /* Float.swift */; };
+		F666AC912381E60E000F465F /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC902381E60E000F465F /* Localization.swift */; };
+		F666AC932381E67F000F465F /* TextfieldRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC922381E67F000F465F /* TextfieldRect.swift */; };
+		F666AC952381E705000F465F /* ArrayMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC942381E705000F465F /* ArrayMerge.swift */; };
+		F666AC972381E76F000F465F /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC962381E76F000F465F /* ScrollView.swift */; };
+		F666AC992381E9DA000F465F /* NavigationBarFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666AC982381E9DA000F465F /* NavigationBarFullView.swift */; };
 		F6A7B24F2376D87B003554DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A7B24E2376D87B003554DD /* AppDelegate.swift */; };
-		F6A7B2512376D87B003554DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A7B2502376D87B003554DD /* SceneDelegate.swift */; };
 		F6A7B2532376D87B003554DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A7B2522376D87B003554DD /* ViewController.swift */; };
 		F6A7B2562376D87B003554DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A7B2542376D87B003554DD /* Main.storyboard */; };
 		F6A7B2582376D87D003554DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A7B2572376D87D003554DD /* Assets.xcassets */; };
@@ -16,9 +41,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60E7342241F6FB1004B612D /* PriceFormatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceFormatExtensions.swift; sourceTree = "<group>"; };
+		F60E7344241F6FB1004B612D /* Textview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Textview.swift; sourceTree = "<group>"; };
+		F60E7345241F6FB1004B612D /* TextFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFormatters.swift; sourceTree = "<group>"; };
+		F60E734A241F6FD2004B612D /* Textfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Textfield.swift; sourceTree = "<group>"; };
+		F6629710243B3E6100864891 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		F666AC6A2381C450000F465F /* SnappingLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnappingLayout.swift; sourceTree = "<group>"; };
+		F666AC6C2381C450000F465F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F666AC6D2381C450000F465F /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F666AC6E2381C450000F465F /* CardMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardMessages.swift; sourceTree = "<group>"; };
+		F666AC6F2381C450000F465F /* KingfisherSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherSource.swift; sourceTree = "<group>"; };
+		F666AC712381C450000F465F /* ShinyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShinyButton.swift; sourceTree = "<group>"; };
+		F666AC7C2381D768000F465F /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F666AC7E2381D782000F465F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F666AC802381D79F000F465F /* PriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormatter.swift; sourceTree = "<group>"; };
+		F666AC822381D813000F465F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F666AC842381D838000F465F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F666AC862381DE6D000F465F /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F666AC882381E28D000F465F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		F666AC8A2381E2B2000F465F /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		F666AC8C2381E58E000F465F /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		F666AC8E2381E5B0000F465F /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		F666AC902381E60E000F465F /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		F666AC922381E67F000F465F /* TextfieldRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldRect.swift; sourceTree = "<group>"; };
+		F666AC942381E705000F465F /* ArrayMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayMerge.swift; sourceTree = "<group>"; };
+		F666AC962381E76F000F465F /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		F666AC982381E9DA000F465F /* NavigationBarFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarFullView.swift; sourceTree = "<group>"; };
 		F6A7B24B2376D87B003554DD /* Awesome-iOS-Snippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome-iOS-Snippets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A7B24E2376D87B003554DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6A7B2502376D87B003554DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F6A7B2522376D87B003554DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6A7B2552376D87B003554DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6A7B2572376D87D003554DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F68FCBE62422BB2C0018B184 /* Textfield */ = {
+			isa = PBXGroup;
+			children = (
+				F60E7345241F6FB1004B612D /* TextFormatters.swift */,
+				F60E7344241F6FB1004B612D /* Textview.swift */,
+				F60E734A241F6FD2004B612D /* Textfield.swift */,
+				F6629710243B3E6100864891 /* Email.swift */,
+			);
+			path = Textfield;
+			sourceTree = "<group>";
+		};
 		F6A7B2422376D87B003554DD = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +117,35 @@
 		F6A7B24D2376D87B003554DD /* Awesome-iOS-Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				F68FCBE62422BB2C0018B184 /* Textfield */,
+				F60E7342241F6FB1004B612D /* PriceFormatExtensions.swift */,
+				F666AC6E2381C450000F465F /* CardMessages.swift */,
+				F666AC6C2381C450000F465F /* CardView.swift */,
+				F666AC6D2381C450000F465F /* DataManager.swift */,
+				F666AC6F2381C450000F465F /* KingfisherSource.swift */,
+				F666AC712381C450000F465F /* ShinyButton.swift */,
+				F666AC6A2381C450000F465F /* SnappingLayout.swift */,
 				F6A7B24E2376D87B003554DD /* AppDelegate.swift */,
-				F6A7B2502376D87B003554DD /* SceneDelegate.swift */,
 				F6A7B2522376D87B003554DD /* ViewController.swift */,
 				F6A7B2542376D87B003554DD /* Main.storyboard */,
 				F6A7B2572376D87D003554DD /* Assets.xcassets */,
 				F6A7B2592376D87D003554DD /* LaunchScreen.storyboard */,
 				F6A7B25C2376D87D003554DD /* Info.plist */,
+				F666AC7C2381D768000F465F /* UIView.swift */,
+				F666AC7E2381D782000F465F /* String.swift */,
+				F666AC802381D79F000F465F /* PriceFormatter.swift */,
+				F666AC822381D813000F465F /* Color.swift */,
+				F666AC842381D838000F465F /* Date.swift */,
+				F666AC862381DE6D000F465F /* ApiManager.swift */,
+				F666AC882381E28D000F465F /* Button.swift */,
+				F666AC8A2381E2B2000F465F /* Font.swift */,
+				F666AC8C2381E58E000F465F /* Image.swift */,
+				F666AC8E2381E5B0000F465F /* Float.swift */,
+				F666AC902381E60E000F465F /* Localization.swift */,
+				F666AC922381E67F000F465F /* TextfieldRect.swift */,
+				F666AC942381E705000F465F /* ArrayMerge.swift */,
+				F666AC962381E76F000F465F /* ScrollView.swift */,
+				F666AC982381E9DA000F465F /* NavigationBarFullView.swift */,
 			);
 			path = "Awesome-iOS-Snippets";
 			sourceTree = "<group>";
@@ -139,8 +222,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A7B2532376D87B003554DD /* ViewController.swift in Sources */,
+				F666AC8D2381E58E000F465F /* Image.swift in Sources */,
+				F666AC7F2381D782000F465F /* String.swift in Sources */,
+				F666AC812381D79F000F465F /* PriceFormatter.swift in Sources */,
+				F666AC892381E28E000F465F /* Button.swift in Sources */,
+				F60E7346241F6FB1004B612D /* PriceFormatExtensions.swift in Sources */,
+				F666AC852381D838000F465F /* Date.swift in Sources */,
+				F60E734B241F6FD2004B612D /* Textfield.swift in Sources */,
+				F666AC912381E60E000F465F /* Localization.swift in Sources */,
+				F666AC932381E67F000F465F /* TextfieldRect.swift in Sources */,
+				F666AC772381C450000F465F /* KingfisherSource.swift in Sources */,
+				F666AC992381E9DA000F465F /* NavigationBarFullView.swift in Sources */,
+				F666AC722381C450000F465F /* SnappingLayout.swift in Sources */,
 				F6A7B24F2376D87B003554DD /* AppDelegate.swift in Sources */,
-				F6A7B2512376D87B003554DD /* SceneDelegate.swift in Sources */,
+				F666AC972381E76F000F465F /* ScrollView.swift in Sources */,
+				F666AC872381DE6D000F465F /* ApiManager.swift in Sources */,
+				F666AC7D2381D768000F465F /* UIView.swift in Sources */,
+				F666AC792381C450000F465F /* ShinyButton.swift in Sources */,
+				F60E7348241F6FB1004B612D /* Textview.swift in Sources */,
+				F666AC832381D813000F465F /* Color.swift in Sources */,
+				F666AC8F2381E5B0000F465F /* Float.swift in Sources */,
+				F666AC8B2381E2B2000F465F /* Font.swift in Sources */,
+				F6629711243B3E6100864891 /* Email.swift in Sources */,
+				F666AC752381C450000F465F /* DataManager.swift in Sources */,
+				F60E7349241F6FB1004B612D /* TextFormatters.swift in Sources */,
+				F666AC952381E705000F465F /* ArrayMerge.swift in Sources */,
+				F666AC742381C450000F465F /* CardView.swift in Sources */,
+				F666AC762381C450000F465F /* CardMessages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
